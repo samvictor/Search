@@ -43,7 +43,7 @@ while True:
 
 s_term = input('\nEnter search term:\n')
 s_path = walk_data[0]
-print ('\nSearching for ' +s_term+ ' in ' +s_path+ 'and subdirectories')
+print ('\nSearching for ' +s_term+ ' in ' +s_path+ ' and subdirectories')
 found = []
 
 if s_term in s_path.lower():
@@ -60,3 +60,5 @@ for root, dirs, files in walk(s_path):
             
 print ('\nThe following files and folders matched your search:')
 print('\t' + '\n\t'.join(found))
+
+input('\n')
